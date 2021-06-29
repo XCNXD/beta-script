@@ -1,7 +1,5 @@
 if not game:IsLoaded() then
-    game.Loaded:Connect(function()
-        print("HIII")
-        end)
+    game.Loaded:wait()	
 end
 print("Start")
 if syn then
