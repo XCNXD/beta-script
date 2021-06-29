@@ -11,6 +11,7 @@ if syn then
     end
 game.Players.LocalPlayer.CharacterAdded:Wait()
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
+	wait(2)
 local string_1 = "CreateRoom";
 local table_1 = {
 	["Hardcore"] = false,
