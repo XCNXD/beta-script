@@ -89,7 +89,7 @@ end)
 --game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 --p.Completed:wait()
             --game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,26,0)
-            print("OK")
+            --print("OK")
 local string_1 = "UseSkill";
 local table_1 = {
 	["hrpCFrame"] = nil,
