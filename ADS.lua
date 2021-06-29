@@ -9,6 +9,7 @@ if syn then
     end
     end)
     end
+game.Players.LocalPlayer.CharacterAdded:Wait()
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 local string_1 = "CreateRoom";
 local table_1 = {
