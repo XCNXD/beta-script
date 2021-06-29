@@ -4,7 +4,7 @@ end
 game.Players.LocalPlayer.CharacterAdded:Wait()
 print("Start")
 if isfile("Cosmic.txt") then
-    loadfile("Cosmic.txt")
+    loadfile("Cosmic.txt")()
 	print("Load!")
 	
     else
