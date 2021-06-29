@@ -20,6 +20,7 @@ print("OUT")
 	print(tostring(game.PlaceId))
 	print("6938803436")
 	print(tostring(game.PlaceId) == "6938803436")
+print(_G.Auto)
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 	wait(2)
 	print("Fire!")
