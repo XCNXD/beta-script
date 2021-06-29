@@ -6,7 +6,7 @@ print("Start")
 if isfile("Cosmic.txt") then
     loadfile("Cosmic.txt")
     else
-        writefile("Cosmic.txt","_G.Auto = ".._G.Auto)
+        writefile("Cosmic.txt","_G.Auto = "..tostring(_G.Auto))
 end
 if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
