@@ -31,6 +31,8 @@ local Target = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFu
 Target:InvokeServer(string_1);
 
 else
+	print(game.PlaceId)
+	print("6938803436")
 	print("Farm!")
 lop = false
 if lop then
