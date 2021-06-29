@@ -3,6 +3,11 @@ if not game:IsLoaded() then
 end
 game.Players.LocalPlayer.CharacterAdded:Wait()
 print("Start")
+if isfile("Cosmic.txt") then
+    loadfile("Cosmic.txt")
+    else
+        writefile("Cosmic.txt","_G.Auto = ".._G.Auto)
+end
 if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
