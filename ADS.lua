@@ -6,10 +6,10 @@ print("Start")
 if isfile("Cosmic.txt") then
     loadfile("Cosmic.txt")
 	print("Load!")
-	print(readfile("Cosmic.txt"))
+	
     else
         writefile("Cosmic.txt","_G.Auto = "..tostring(_G.Auto))
-	print(readfile("Cosmic.txt"))
+	
 end
 if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
@@ -19,13 +19,8 @@ if syn then
     end
     end)
     end
-print("OUT")
-	print(tostring(game.PlaceId))
-	print("6938803436")
-	print(tostring(game.PlaceId) == "6938803436")
-print(_G.Auto)
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
-	wait(2)
+	wait(5)
 	print("Fire!")
 local string_1 = "CreateRoom";
 local table_1 = {
