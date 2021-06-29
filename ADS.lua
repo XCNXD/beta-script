@@ -6,12 +6,14 @@ if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
         syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/XCNXD/beta-script/main/ADS.lua'))()")
+				print("Set!")
     end
     end)
     end
 game.Players.LocalPlayer.CharacterAdded:Wait()
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 	wait(2)
+	print("Fire!")
 local string_1 = "CreateRoom";
 local table_1 = {
 	["Hardcore"] = false,
@@ -29,6 +31,7 @@ local Target = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFu
 Target:InvokeServer(string_1);
 
 else
+	print("Farm!")
 lop = false
 if lop then
 game.Players.LocalPlayer.Character.Humanoid.Name = 1
