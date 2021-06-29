@@ -3,6 +3,11 @@ if not game:IsLoaded() then
         print("HIII")
         end)
 end
+if syn then
+    game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
+    if State == Enum.TeleportState.Started then
+        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/XCNXD/beta-script/main/ADS'))()")
+    end
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 local string_1 = "CreateRoom";
 local table_1 = {
@@ -37,13 +42,13 @@ PQR.Anchored = true
 PQR.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,-4,0)
 
 end
---[[if syn then
+if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
         syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/XCNXD/beta-script/main/ADS'))()")
     end
 end)
-    end]]
+    end
 repeat
     repeat
         wait()
