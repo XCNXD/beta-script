@@ -20,7 +20,7 @@ if syn then
     end)
     end
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
-	wait(5)
+	wait(6)
 	print("Fire!")
 local string_1 = "CreateRoom";
 local table_1 = {
