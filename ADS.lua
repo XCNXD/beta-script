@@ -3,21 +3,14 @@ if not game:IsLoaded() then
 end
 game.Players.LocalPlayer.CharacterAdded:Wait()
 print("Start")
-if syn then
-    game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
-    if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/XCNXD/beta-script/main/ADS.lua'))()")
-				print("Set!")
-    end
-    end)
-    end
+
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 	wait(2)
 	print("Fire!")
 local string_1 = "CreateRoom";
 local table_1 = {
 	["Hardcore"] = false,
-	["Difficulty"] = 'Easy',
+	["Difficulty"] = _G.Level,
 	["MapName"] = 'Titan Dimension',
 	["FriendsOnly"] = false
 };
