@@ -43,6 +43,7 @@ else
 	print(tostring(game.PlaceId))
 	print("6938803436")
 	print(tostring(game.PlaceId) == "6938803436")
+	print(_G.Auto)
 	print("Farm!")
 lop = false
 if lop then
