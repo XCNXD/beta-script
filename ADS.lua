@@ -1,6 +1,7 @@
 if not game:IsLoaded() then
     game.Loaded:wait()	
 end
+game.Players.LocalPlayer.CharacterAdded:Wait()
 print("Start")
 if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
@@ -10,7 +11,6 @@ if syn then
     end
     end)
     end
-game.Players.LocalPlayer.CharacterAdded:Wait()
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 	wait(2)
 	print("Fire!")
