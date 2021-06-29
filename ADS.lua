@@ -9,6 +9,8 @@ if syn then
     if State == Enum.TeleportState.Started then
         syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/XCNXD/beta-script/main/ADS.lua'))()")
     end
+    end)
+    end
 if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 local string_1 = "CreateRoom";
 local table_1 = {
