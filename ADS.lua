@@ -10,7 +10,7 @@ if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
 local string_1 = "CreateRoom";
 local table_1 = {
 	["Hardcore"] = false,
-	["Difficulty"] = _G.Level,
+	["Difficulty"] = getgenv().Level,
 	["MapName"] = 'Titan Dimension',
 	["FriendsOnly"] = false
 };
