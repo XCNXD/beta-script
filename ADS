@@ -1,3 +1,24 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+if tostring(game.PlaceId) == "6938803436" and _G.Auto == true then
+local string_1 = "CreateRoom";
+local table_1 = {
+	["Hardcore"] = false,
+	["Difficulty"] = 'Easy',
+	["MapName"] = 'Titan Dimension',
+	["FriendsOnly"] = false
+};
+local Target = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction;
+Target:InvokeServer(string_1, table_1);
+
+
+
+local string_1 = "TeleportPlayers";
+local Target = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction;
+Target:InvokeServer(string_1);
+
+else
 lop = false
 if lop then
 game.Players.LocalPlayer.Character.Humanoid.Name = 1
@@ -14,32 +35,43 @@ PQR.Anchored = true
 PQR.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,-4,0)
 
 end
-if syn then
+--[[if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
         syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/XCNXD/beta-script/main/ADS'))()")
     end
 end)
-    end
+    end]]
 repeat
-    
+    repeat
+        wait()
+        until game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 for i,v in pairs(game:GetService("Workspace").Folders.Monsters:GetDescendants())do
     
     if v:FindFirstChild("HumanoidRootPart") then
 --        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,26,0)
 --        PQR.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-23.8,0)
             tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
-        local CFAN= v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,math.random(8,9),0)
+        local CFAN= v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,math.random(9,10),0)
         local QQE = CFAN * CFrame.Angles(math.rad(-90),0,0)
 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = QQE})
 tween:Play()
 tween.Completed:wait()
 repeat
+    if game:GetService("Workspace").Folders.Debris:FindFirstChild("Rasengan") or game:GetService("Workspace").Folders.Debris:FindFirstChild("Shuriken") then
+                        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
+        local CFAN= v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,2,0)
+        local QQE = CFAN * CFrame.Angles(math.rad(-90),0,0)
+tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = QQE})
+tween:Play()
+        else
                 tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
         local CFAN= v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,math.random(8,9),0)
         local QQE = CFAN * CFrame.Angles(math.rad(-90),0,0)
 tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = QQE})
 tween:Play()
+
+end
 wait()
     spawn(function()
 local CKEE = 2
@@ -80,3 +112,4 @@ wait()
 until false
 
     
+end
