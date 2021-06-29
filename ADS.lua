@@ -3,6 +3,7 @@ if not game:IsLoaded() then
         print("HIII")
         end)
 end
+print("Start"!)
 if syn then
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
