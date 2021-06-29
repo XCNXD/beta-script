@@ -39,12 +39,7 @@ local Target = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFu
 Target:InvokeServer(string_1);
 
 else
-	print("IN")
-	print(tostring(game.PlaceId))
-	print("6938803436")
-	print(tostring(game.PlaceId) == "6938803436")
-	print(_G.Auto)
-	print("Farm!")
+
 lop = false
 if lop then
 game.Players.LocalPlayer.Character.Humanoid.Name = 1
